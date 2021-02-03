@@ -16,7 +16,8 @@
           clip-rule="evenodd"
         />
       </svg>
-      <a href="https://v3.vuejs.org/" target="_blank">Vue</a> &nbsp;&amp;&nbsp;
+      <a href="https://v3.vuejs.org/" target="_blank">using Vue</a>
+      &nbsp;&amp;&nbsp;
       <a href="https://tailwindcss.com" target="_blank">Tailwind</a>
     </p>
     <p class="mt-1 text-sm">
@@ -25,11 +26,32 @@
         >50projects50days Course &amp; Github Project</a
       >
     </p>
+    <p class="space-x-2">
+      <a href="https://github.com/jassehomar" target="_blank"
+        >View project on
+        <font-awesome-icon :icon="github" class="text-base" />.</a
+      >
+
+      <a href="https://twitter.com/jassehomar99" target="_blank"
+        >Follow Me
+        <font-awesome-icon :icon="twitter" class="text-blue-400 text-base"
+      /></a>
+    </p>
   </footer>
 </template>
 
 <script>
-export default {};
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { faTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
+export default {
+  components: { FontAwesomeIcon },
+  data() {
+    return {
+      twitter: faTwitter,
+      github: faGithub,
+    };
+  },
+};
 </script>
 
 <style>

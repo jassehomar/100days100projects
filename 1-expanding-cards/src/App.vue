@@ -1,7 +1,9 @@
 <template>
-  <div class="flex min-h-screen flex-col items-center py-3 sm:py-6 bg-gray-50">
-    <h1 class="text-2xl uppercase text-indigo-500 my-3 underline font-bold">
-      100 Days or Less - 100 Projects
+  <div
+    class="flex min-h-screen flex-col items-center py-3 sm:py-6 bg-gray-50 px-4 sm:px-8"
+  >
+    <h1 class="text-2xl uppercase text-indigo-500 mb-2 underline font-bold">
+      100 Days 100 Projects
     </h1>
 
     <h2 class="text-lg text-gray-700 mb-5">
